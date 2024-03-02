@@ -4,5 +4,5 @@ resources:
   - namespace.yaml
   - deployment.yaml         
   - service.yaml            
-  - jwt-policy.yaml 
-
+  - jwt-policy.yaml
+  - configmap.yaml 

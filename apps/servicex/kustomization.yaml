@@ -7,4 +7,5 @@ resources:
   - secret.yaml 
   - service.yaml            
   - gateway.yaml           
-  - jwt-policy.yaml     
+  - jwt-policy.yaml
+  - configmap.yaml
