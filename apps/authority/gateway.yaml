@@ -5,7 +5,7 @@ metadata:
   namespace: authority
 spec:
   selector:
-    istio: ingressgateway # This assumes you have an Istio Ingress Gateway labeled with `istio: ingressgateway`
+    istio: ingressgateway
   servers:
   - port:
       number: 80
@@ -14,4 +14,4 @@ spec:
     hosts:
     - "authority.cb-interview.com"
     tls:
-      httpsRedirect: true # Redirect HTTP to HTTPS
+      httpsRedirect: true

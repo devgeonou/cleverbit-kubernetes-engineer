@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: authority
-        image: 4719/authority
+        image: 4719/authority:v1
         ports:
         - containerPort: 8080
         volumeMounts:
