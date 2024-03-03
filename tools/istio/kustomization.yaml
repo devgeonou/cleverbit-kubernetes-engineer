@@ -5,4 +5,5 @@ resources:
   - istio-charts.yaml
   - istio-base.yaml
   - istio-istiod.yaml
+  - hpa.yaml
   - istio-gw.yaml
