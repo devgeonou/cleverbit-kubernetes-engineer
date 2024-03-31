@@ -72,6 +72,6 @@ spec:
         exact: /token
     route:
     - destination:
-        host: authority-service.authority.svc.cluster.local
+        host: authority.authority.svc.cluster.local
         port:
-          number: 80
+          number: 8080
