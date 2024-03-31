@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - authority.yaml
   - servicex.yaml
+  - servicey.yaml
