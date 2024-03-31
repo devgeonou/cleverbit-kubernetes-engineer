@@ -42,3 +42,36 @@ spec:
           items:
           - key: Cleverbit__Enabled
             path: Cleverbit__Enabled
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: authority
+  namespace: authority
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+    name: http
+  selector:
+    app: authority
+---
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: authority-virtualservice
+  namespace: authority
+spec:
+  hosts:
+  - "authority.cb-interview.com"
+  gateways:
+  - istio-ingress/istio-ingress
+  http:
+  - match:
+    - uri:
+        exact: /token
+    route:
+    - destination:
+        host: authority-service.authority.svc.cluster.local
+        port:
+          number: 80
