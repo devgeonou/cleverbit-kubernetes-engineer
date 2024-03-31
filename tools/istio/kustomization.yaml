@@ -6,4 +6,3 @@ resources:
   - istio-istiod.yaml
   - namespaces.yaml
   - istio-gw_release.yaml
-  - istio-gw.yaml
