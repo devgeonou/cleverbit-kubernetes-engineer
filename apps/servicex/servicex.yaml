@@ -14,7 +14,7 @@ data:
 apiVersion: v1
 kind: Secret
 metadata:
-  name: servicey-url
+  name: servicex-url
   namespace: servicex
 type: Opaque
 data:
