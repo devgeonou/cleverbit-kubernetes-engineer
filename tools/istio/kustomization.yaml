@@ -5,5 +5,5 @@ resources:
   - istio-base.yaml
   - istio-istiod.yaml
   - namespaces.yaml
-  - istio-gw_release.yaml
-  #- istio-gw.yaml
+  #- istio-gw_release.yaml
+  - istio-gw.yaml
